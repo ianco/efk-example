@@ -1,0 +1,11 @@
+
+
+curl -X PUT -H "Content-Type: application/json" \
+-d '{"msg_id":"","thread_id":"","handler":"","ellapsed_milli":27,"traced_type":"","timestamp":"","outcome":""}' \
+http://localhost:9200/acapytrace/_doc/1
+
+curl -X PUT -H "Content-Type: application/json" \
+-d '{"msg_id":"","thread_id":"","handler":"","ellapsed_milli":27,"traced_type":"","timestamp":"","outcome":""}' \
+http://localhost:9200/acapytrace/_doc/2
+
+curl http://localhost:9200/acapytrace/_doc/2
